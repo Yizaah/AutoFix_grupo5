@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Autofix</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <main>
+        <h1>Autofix - Reparación de Vehículos a Domicilio</h1>
+        
+
+    </main>
+
+    <h2>Servicios y precios</h2>
+    <div class="servicios">
+        <div class="servicio">
+            <img src="https://blog.salfarepuestos.cl/wp-content/uploads/2024/06/mejores-aceite-para-camiones.jpg" alt="Cambio de aceite">
+            <p><strong>Cambio de aceite</strong></p>
+            <p>Precio: 20.000 clp</p>
+        </div>
+        <div class= "servicio">
+            <img src="https://dercocenter-api.s3.us-east-1.amazonaws.com/images/contents/2022-04-05-frenos.jpg" alt="Revisión de frenos">
+            <p><strong>Revisión de frenos</strong></p>
+            <p>Precio: 15.000 clp</p>
+        </div>
+        <div class= "servicio">
+            <img src="https://autosoporte.com/wp-content/uploads/2021/03/car-electrical-system-repair-1.jpg" alt="Diagnostico eléctrico">
+            <p><strong>Diagnostico eléctrico</strong></p>
+            <p>Precio: 30.000 clp</p>
+        </div>
+    </div>
+
+<section>
+    <h2> Solicitar reparación </h2>
+    <form>
+        <label for="nombre"> Nombre del cliente </label>
+        <input type="text" id="nombre" name="nombre" requiered>
+
+        <label for="Servicios"> Tipo de reparación </label>
+        <select id="Servicios" name="servicios" required>
+            <option vaule="" disabled selected> Selecciona un servicio </option>
+            <option value=> Cambio de aceite </option>
+            <option value=> Revisión de frenos </option>
+            <option value=> Diagnóstico eléctrico</option>
+        </select>
+
+        <label for="description"> Descripción</label>
+        <textarea id="description" name="description"></textarea>
+
+        <label for="fecha"> Agendar cita</label>
+        <input type="datetime-local" id="fecha" name="fecha" required>
+
+        <h3> Información de Pago</h3>
+        <label for="tarjeta"> <strong>Número de tarjeta</strong></label>
+        <input type="text" id="tarjeta" name="tarjeta" placeholder="**** **** **** 1234" required>
+
+        <label for="titular"> <strong>Nombre del titular</strong></label>
+        <input type="text" id="titular" name="titular" requiered>
+
+        <label for="cvv"><strong>CVV</strong></label>
+        <input type="text" id="cvv" name="cvv" maxlength="3" required>
+
+        <button type="submit">Confirmar Solicitud</button>
+    
+    </form>
+</section>
+</body>
+</html>
